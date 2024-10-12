@@ -4,7 +4,9 @@
   import { Button } from "./ui/button";
 </script>
 
-<nav class="mt-5 hidden gap-6 font-medium md:grid md:grid-cols-3 md:place-items-center">
+<nav
+  class="mt-5 flex flex-col items-center gap-2 font-medium md:grid md:grid-cols-3 md:place-items-center md:gap-6"
+>
   <!-- Title -->
   <Button
     href="/"
@@ -15,7 +17,7 @@
   </Button>
 
   <!-- Navigation -->
-  <ul class="m-8 md:m-0 md:flex md:gap-8 md:justify-self-center">
+  <ul class="m-0 flex md:gap-8 md:justify-self-center">
     <li>
       <Button
         href="/about"
