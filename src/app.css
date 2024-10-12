@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 72.22% 50.59%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 142.1 76.2% 36.3%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 9% 11%;
+    --foreground: 60 7% 92%;
+    --card: 240 8% 23%;
+    --card-foreground: 240 8% 83%;
+    --popover: 240 10% 20%;
+    --popover-foreground: 240 10% 67%;
+    --primary: 87 37% 58%;
+    --primary-foreground: 100 18% 10%;
+    --secondary: 263 29% 36%;
+    --secondary-foreground: 265 30% 92%;
+    --muted: 240 9% 29%;
+    --muted-foreground: 240 9% 82%;
+    --accent: 240 10% 38%;
+    --accent-foreground: 240 14% 97%;
+    --destructive: 353 70% 39%;
+    --destructive-foreground: 355 67% 96%;
+    --border: 240 9% 29%;
+    --input: 240 9% 29%;
+    --ring: 102 18% 30%;
+  }
+}
+
+@layer base {
+  @media screen and (min-width: theme("screens.md")) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  /* @media screen and (min-width: theme("screens.lg")) { */
+  /*   html { */
+  /*     font-size: 20px; */
+  /*   } */
+  /* } */
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+}
