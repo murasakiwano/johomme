@@ -4,7 +4,7 @@
   export let data;
 </script>
 
-<article class="prose prose-primary me-auto ms-auto max-w-prose dark:prose-invert">
+<article class="prose prose-lg prose-primary me-auto ms-auto max-w-prose dark:prose-invert">
   <!-- Title -->
   <hgroup>
     <h1>{data.meta.title}</h1>

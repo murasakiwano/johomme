@@ -22,14 +22,14 @@
       <Button
         href="/about"
         variant="ghost"
-        class="font-mono font-light text-muted-foreground transition-colors">About</Button
+        class="font-mono text-muted-foreground transition-colors dark:font-light">About</Button
       >
     </li>
     <li>
       <Button
         href="/blog"
         variant="ghost"
-        class="font-mono font-light text-muted-foreground transition-colors hover:text-foreground"
+        class="font-mono text-muted-foreground transition-colors hover:text-foreground dark:font-light"
         >Blog</Button
       >
     </li>
@@ -37,7 +37,7 @@
       <Button
         href="/rss.xml"
         variant="ghost"
-        class="font-mono font-light text-muted-foreground transition-colors hover:text-foreground"
+        class="font-mono text-muted-foreground transition-colors hover:text-foreground dark:font-light"
         >RSS</Button
       >
     </li>

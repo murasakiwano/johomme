@@ -50,17 +50,6 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground) / <alpha-value>)",
         },
         gray: {
-          // 50: "#e6e6ea",
-          // 100: "#ceced6",
-          // 200: "#b5b5c1",
-          // 300: "#9c9cac",
-          // 400: "#838398",
-          // 500: "#6c6c82",
-          // 600: "#434350",
-          // 700: "#2e2e37",
-          // 800: "#1a1a1f",
-          // 900: "#121215",
-          // 950: "#09090b",
           50: "#EEEEF1",
           100: "#E0E0E5",
           200: "#C2C2CC",
@@ -80,7 +69,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Raleway Variable", ...fontFamily.sans],
+        sans: ["Ubuntu Sans Variable", "iA Writer Quattro", "Raleway Variable", ...fontFamily.sans],
         mono: ["ml", ...fontFamily.mono],
       },
       typography: ({ theme }) => ({

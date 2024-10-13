@@ -9,7 +9,7 @@
 <ul class="grid list-none gap-8">
   {#each posts as post}
     <li class="flex max-w-prose items-baseline gap-5">
-      <p class="font-mono text-sm font-light text-muted-foreground">{formatDate(post.date)}</p>
+      <p class="font-mono text-sm text-muted-foreground dark:font-light">{formatDate(post.date)}</p>
       <div>
         <a
           href="/blog/{post.slug}"
