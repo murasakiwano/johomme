@@ -2,29 +2,10 @@ import adapter from "@sveltejs/adapter-cloudflare";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 import { mdsvex, escapeSvelte } from "mdsvex";
-import { nameToEmoji } from "gemoji";
-import { findAndReplace } from "mdast-util-find-and-replace";
 import { createHighlighter } from "shiki";
 import remarkUnwrapImages from "remark-unwrap-images";
 import remarkToc from "remark-toc";
 import rehypeSlug from "rehype-slug";
-
-function remarkEmoji() {
-  /** @param tree {import("mdast").Root} */
-  return function (tree) {
-    findAndReplace(tree, [
-      /:(\+1|[-\w]+):/g,
-      /**
-       * @param {string} _
-       * @param {string} $1
-       * @return {string | false}
-       */
-      function (_, $1) {
-        return Object.hasOwn(nameToEmoji, $1) ? nameToEmoji[$1] : false;
-      },
-    ]);
-  };
-}
 
 const theme = "github-dark";
 const highlighter = await createHighlighter({
@@ -44,7 +25,7 @@ const mdsvexOptions = {
   layout: {
     _: "./src/mdsvex.svelte",
   },
-  remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }], remarkEmoji],
+  remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
   rehypePlugins: [rehypeSlug],
 };
 

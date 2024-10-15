@@ -10,13 +10,13 @@
     --card-foreground: 60 7% 8%;
     --popover: 240 10% 96%;
     --popover-foreground: 60 7% 8%;
-    --primary: 103 17% 36%;
+    --primary: 103 24% 28%;
     --primary-foreground: 240 10% 96%;
-    --secondary: 240 10% 88%;
+    --secondary: 240 31% 88%;
     --secondary-foreground: 265 30% 8%;
     --muted: 240 10% 90%;
     --muted-foreground: 263 30% 31%;
-    --accent: 240 10% 88%;
+    --accent: 240 10% 80%;
     --accent-foreground: 265 30% 8%;
     --destructive: 353 70% 35%;
     --destructive-foreground: 240 9% 87%;
@@ -27,7 +27,7 @@
   }
   .dark {
     --background: 240 9% 11%;
-    --foreground: 60 7% 92%;
+    --foreground: 60 10% 96%;
     --card: 240 8% 23%;
     --card-foreground: 240 8% 83%;
     --popover: 240 10% 20%;
@@ -66,9 +66,5 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings:
-      "rlig" 1,
-      "calt" 1,
-      "ss02" 1;
   }
 }
