@@ -11,6 +11,7 @@
 
 <svelte:head>
   <!-- Fonts and Icons -->
+  <link rel="stylesheet" href="/fonts/inter.css" />
   <link rel="stylesheet" href="/fonts/monolisa-webfont.css" />
   <link rel="icon" href="/favicon.png" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />

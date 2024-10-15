@@ -14,6 +14,10 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ["InterVariable", ...fontFamily.sans],
+      mono: ["ml", ...fontFamily.mono],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border) / <alpha-value>)",
@@ -67,10 +71,6 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        sans: ["Ubuntu Sans Variable", "iA Writer Quattro", "Raleway Variable", ...fontFamily.sans],
-        mono: ["ml", ...fontFamily.mono],
       },
       typography: ({ theme }) => ({
         primary: {

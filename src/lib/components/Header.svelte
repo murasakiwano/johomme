@@ -46,6 +46,7 @@
         href="https://github.com/murasakiwano"
         variant="ghost"
         class="text-muted-foreground transition-colors hover:text-foreground"
+        aria-label="Go to Johann's GitHub profile"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
