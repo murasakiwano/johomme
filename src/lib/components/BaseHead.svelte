@@ -11,8 +11,8 @@
 
 <svelte:head>
   <!-- Fonts and Icons -->
-  <link rel="stylesheet" href="/fonts/inter.css" />
-  <link rel="stylesheet" href="/fonts/monolisa-webfont.css" />
+  <link rel="preload" href="/fonts/inter.css" as="style" />
+  <link rel="preload" href="/fonts/monolisa-webfont.css" as="style" />
   <link rel="icon" href="/favicon.png" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
