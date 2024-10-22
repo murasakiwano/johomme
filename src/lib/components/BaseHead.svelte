@@ -11,8 +11,21 @@
 
 <svelte:head>
   <!-- Fonts and Icons -->
-  <link rel="preload" href="/fonts/inter.css" as="style" />
   <link rel="preload" href="/fonts/monolisa-webfont.css" as="style" />
+  <link
+    rel="preload"
+    href="/fonts/InterVariable.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/InterVariable-Italic.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
   <link rel="icon" href="/favicon.png" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
