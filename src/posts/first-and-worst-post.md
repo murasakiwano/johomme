@@ -16,11 +16,12 @@ I’ve wanted to write a blog for a while now. In my previous job, I enjoyed wri
 I’m an engineer by training and at my core. The art and science of engineering is one of the things I’m most fascinated about. During my graduation as an electrical engineer, I developed a passion by computing in general, and now I’m interested in learning and exploring a lot of concepts and areas. But first and foremost, this blog is for me. And maybe what I have to say will resonate with someone.
 
 Some topics that may or may not be talked about here are (this list is most certainly wrong):
+
 - Programming Languages
-    - Rust
-    - Go
-    - Ruby
-    - ~~Awful~~ TypeScript/JavaScript, but mostly Svelte probably
+  - Rust
+  - Go
+  - Ruby
+  - ~~Awful~~ TypeScript/JavaScript, but mostly Svelte probably
 - Distributed systems (cloud, Kubernetes, infrastructure…)
 - Compilers
 - Operating Systems

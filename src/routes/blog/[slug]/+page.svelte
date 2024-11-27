@@ -1,10 +1,14 @@
 <script lang="ts">
-  import { formatDate } from "$lib/utils";
+  import { formatDate } from "$lib/format-date";
 
-  export let data;
+  interface Props {
+    data: any;
+  }
+
+  let { data }: Props = $props();
 </script>
 
-<article class="prose prose-lg prose-primary me-auto ms-auto max-w-prose dark:prose-invert">
+<article class="prose-primary prose prose-lg me-auto ms-auto max-w-prose dark:prose-invert">
   <!-- Title -->
   <hgroup>
     <h1>{data.meta.title}</h1>
@@ -29,5 +33,5 @@
   </hgroup>
 
   <!-- Post -->
-  <svelte:component this={data.content} />
+  <data.content />
 </article>

@@ -1,7 +1,11 @@
 <script lang="ts">
   import PostList from "$lib/components/PostList.svelte";
 
-  export let data;
+  interface Props {
+    data: any;
+  }
+
+  let { data }: Props = $props();
 </script>
 
 <section>

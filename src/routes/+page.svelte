@@ -1,11 +1,18 @@
 <script lang="ts">
   import PostList from "$lib/components/PostList.svelte";
   import HomeIntro from "$lib/content/home-introduction.md";
+  import type { Post } from "$lib/types";
 
-  export let data;
+  interface Props {
+    data: {
+      posts: Post[];
+    };
+  }
+
+  let { data }: Props = $props();
 </script>
 
-<div class="prose prose-primary mx-auto divide-y dark:prose-invert lg:prose-lg">
+<div class="prose-primary prose mx-auto divide-y dark:prose-invert lg:prose-lg">
   <section class="mb-5">
     <h1>Hi! Welcome to my personal website</h1>
     <HomeIntro />

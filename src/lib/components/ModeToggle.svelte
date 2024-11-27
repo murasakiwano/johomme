@@ -11,8 +11,8 @@
 
 <div class={className}>
   <DropdownMenu.Root>
-    <DropdownMenu.Trigger asChild let:builder>
-      <Button builders={[builder]} variant="ghost" size="icon">
+    <DropdownMenu.Trigger>
+      <Button variant="ghost" size="icon">
         <Sun
           class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:rotate-90 dark:scale-0"
         />

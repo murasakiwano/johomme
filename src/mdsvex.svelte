@@ -1,6 +1,11 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
   import img from "$lib/components/img.svelte";
   export { img };
 </script>
 
-<slot />
+<script>
+  /** @type {{children?: import('svelte').Snippet}} */
+  let { children } = $props();
+</script>
+
+{@render children?.()}

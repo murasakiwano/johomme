@@ -1,4 +1,3 @@
-
 # Hi! I'm Johann, an engineer from Brazil
 
 I graduated as an electrical engineer at [UnB](https://unb.br) in 2023. I started this website because I thought it would be interesting.
